@@ -38,17 +38,4 @@ class Pessoa extends Mamal {
   }
 }
 
-const marcos = new Pessoa("Marcos", "42");
-
-//console.log(marcos.idade);
-console.log(marcos.nome);
-//console.log(marcos.idade);
-
-marcos.dizerOla();
-//marcos.soma(4, 4);
-
-//Pessoa.soma(5, 5);
-marcos.idade = 10;
-console.log(marcos.idade);
-
-console.log(marcos.animal);
+export default Pessoa;

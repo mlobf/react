@@ -1,4 +1,5 @@
-const pessoa = require(".outro_main.js");
+import Pessoa from "./main.js";
 
-const pessoa1 = new Pessoa("João", 30);
-//pessoa1.dizerOla();
+const p = new Pessoa("humano", "marcos", 44);
+
+console.log(p.nome);
