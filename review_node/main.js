@@ -1,13 +1,20 @@
-class Pessoa {
+class Mamal {
+  constructor(animal) {
+    this.animal = animal;
+  }
+}
+
+class Pessoa extends Mamal {
   #nome;
   #idade;
 
-  constructor(nome, idade) {
+  constructor(animal, nome, idade) {
+    super(animal);
     this.#nome = nome;
     this.#idade = idade;
   }
   //static method
-  static soma(x, y) {
+  static async soma(x, y) {
     return console.log(x + y);
   }
   get nome() {
@@ -43,3 +50,5 @@ marcos.dizerOla();
 //Pessoa.soma(5, 5);
 marcos.idade = 10;
 console.log(marcos.idade);
+
+console.log(marcos.animal);
